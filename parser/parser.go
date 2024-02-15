@@ -228,6 +228,7 @@ type (
 func (p *Parser) registerPrefix(tokenType token.TokenType, fn prefixParseFn) {
 	p.prefixParseFns[tokenType] = fn
 }
+
 func (p *Parser) registerInfix(tokenType token.TokenType, fn infixParseFn) {
 	p.infixParseFns[tokenType] = fn
 }
@@ -334,6 +335,7 @@ func (p *Parser) parseCallExpression(function ast.Expression) ast.Expression {
 	exp.Arguments = p.parseCallArguments()
 	return exp
 }
+
 func (p *Parser) parseCallArguments() []ast.Expression {
 	args := []ast.Expression{}
 	if p.peekTokenIs(token.RPAREN) {
@@ -359,6 +361,7 @@ func (p *Parser) peekPrecedence() int {
 	}
 	return LOWEST
 }
+
 func (p *Parser) curPrecedence() int {
 	if p, ok := precedences[p.curToken.Type]; ok {
 		return p

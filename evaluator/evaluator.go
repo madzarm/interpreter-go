@@ -3,7 +3,6 @@ package evaluator
 import (
 	"GoInterpreter/ast"
 	"GoInterpreter/object"
-	"fmt"
 )
 
 var (
@@ -13,7 +12,6 @@ var (
 )
 
 func Eval(node ast.Node) object.Object {
-	fmt.Printf("node: %s  type: %T\n", node, node)
 	switch node := node.(type) {
 	case *ast.Program:
 		return evalProgram(node)

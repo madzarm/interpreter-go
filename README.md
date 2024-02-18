@@ -1,7 +1,7 @@
 <h1>Monkey Interpreter</h1>
 
 This is an interpreter for a 'Monkey' programming language written in <b><i>Go</i></b><br/>
-I've created this based on the Thorsten Ball's book on writing interpreters in order to learn Go.<br/>
+I've created this based on the Thorsten Ball's book on writing interpreters.<br/>
 
 in order to use the interpreter, locate and move into the root folder and run:
     

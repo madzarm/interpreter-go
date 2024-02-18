@@ -61,7 +61,7 @@ Monkey also supports higher order functions. These are functions that take other
 Monkey has _first class functions_. That means functions in Monkey are just values, like integers or booleans.<br/>
 
 <h3>Closures</h3>
-Monkey also supports **_closures_**. Closure is a function that references variables from outside its body allowing
+Monkey also supports <b><i>closures</i></b>. Closure is a function that references variables from outside its body allowing
 it to encapsulate state and behaviour within functions:
 
     let newAdder = fn(x) {
